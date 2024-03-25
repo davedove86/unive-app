@@ -1,5 +1,5 @@
 import '../assets/styles/globals.css';
-import Navbar from '@/components/Navbar';
+import Searchbar from '@/components/Searchbar';
 import Sidebar from '@/components/Sidebar';
 
 export const metadata = {
@@ -12,7 +12,7 @@ const MainLayout = ({ children }) => {
 	return (
 		<html lang='en'>
 			<body>
-				<Navbar />
+				<Searchbar />
 				<Sidebar />
 				<main>{children}</main>
 			</body>
