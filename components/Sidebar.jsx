@@ -61,7 +61,7 @@ const Sidebar = () => {
 						</li>
 						<li className='link'>
 								<Link href='/settings' className='flex items-center'>
-                <Image src={Settings} className='mr-2'/>
+                <Image src={Settings} className='mr-2' />
                 <p>Settings</p>
               </Link>
 						</li>
