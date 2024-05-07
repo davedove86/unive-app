@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Message from '@/assets/images/message.svg';
 import Maginfier from '@/assets/images/mag.svg';
 import Notification from '@/assets/images/notification.svg';
-import User from '@/assets/images/avatar.png';
+import {userDetails} from '@/app/placeholder-data';
 
 const Searchbar = () => {
 	return <div className='searchbar'>
@@ -11,8 +11,6 @@ const Searchbar = () => {
       <Image src={Maginfier} />
        <input className='search' type='text' placeholder='Search...' />
     </div>
-
-    {/* TODO: add user avatar and links to messages and notifications */}
     <div className='flex items-center gap-4'>
       <Link href='/messages'>
         <Image className='icon' src={Message} />
@@ -23,10 +21,10 @@ const Searchbar = () => {
       </Link>
       <Link href='/user'>
         <div className="flex gap-2 items-center">
-          <Image className='icon' src={User} />
+          <Image className='icon' src={userDetails.avatar} width={100} height={100} />
           <div className="flex flex-col">
-            <p className='font-bold'>Jess Doe</p>
-            <p className='font-light'>Student</p>
+            <p className='font-bold'>{userDetails.firstName} {userDetails.lastName}</p>
+            <p className='font-light'>{userDetails.role}</p>
           </div>
         </div>
       </Link>
