@@ -3,13 +3,16 @@ import {userDetails, notesData} from '@/app/placeholder-data';
 const Notes = () => {
 	return <>
     <h1 className='text-3xl mb-8'>{userDetails.firstName}'s Notes</h1>
-    {notesData.map((note) => (
-      <div key={note.id} className='mb-10'>
-        <h2 className='font-bold my-2'>Title: {note.title}</h2>
-        <p className='mb-2'>{note.content}</p>
-        <p>Date: {note.date}</p>
-      </div>
-    ))}
+    <div className="xl:grid-cols-3 lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-4 flex flex-col">
+      {notesData.map((note) => (
+        <div key={note.id} className='mb-10 shadow-md bg-white p-4 rounded-md flex flex-col'>
+          <h2 className='font-bold text-purple my-2'>{note.title}</h2>
+          <p className='mb-10'>{note.content}</p>
+          <p className='mt-auto'>Date created: {note.date}</p>
+          <button className='mt-4 bg-purple text-white py-2 rounded-lg'>View More</button>
+        </div>
+      ))}
+    </div>
   </>;
 };
 export default Notes;

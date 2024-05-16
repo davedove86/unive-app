@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Message from '@/assets/images/message.svg';
 import Maginfier from '@/assets/images/mag.svg';
 import Notification from '@/assets/images/notification.svg';
+import UserProfile from '@/assets/images/avatar.png';
 import {userDetails} from '@/app/placeholder-data';
 
 const Searchbar = () => {
@@ -21,7 +22,7 @@ const Searchbar = () => {
       </Link>
       <Link href='/user'>
         <div className="flex gap-2 items-center">
-          <Image className='icon' src={userDetails.avatar} width={100} height={100} />
+          <Image className='icon' src={UserProfile} width={100} height={100} />
           <div className="flex flex-col">
             <p className='font-bold'>{userDetails.firstName} {userDetails.lastName}</p>
             <p className='font-light'>{userDetails.role}</p>
