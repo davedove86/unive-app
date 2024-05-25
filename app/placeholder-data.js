@@ -39,7 +39,6 @@ const notesData = [
   },
 ];
 
-//create me an object with 5 active university courses realting to computer science and web development with name of course, subject, date, and time with current grade and grade average
 const coursesData = [
   {
     id: 1,
@@ -93,7 +92,6 @@ const coursesData = [
   },
 ];
 
-// create an array of messages from other students with their name, message, and date
 const messagesData = [
   {
     id: 1,

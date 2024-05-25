@@ -1,3 +1,4 @@
+import '../assets/styles/normalize.css';
 import '../assets/styles/globals.css';
 import Searchbar from '@/components/Searchbar';
 import Sidebar from '@/components/Sidebar';

@@ -12,7 +12,7 @@ const Searchbar = () => {
       <Image src={Maginfier} />
        <input className='search' type='text' placeholder='Search...' />
     </div>
-    <div className='flex items-center gap-4'>
+    <div className='links-wrapper'>
       <Link href='/messages'>
         <Image className='icon' src={Message} />
       </Link>
@@ -21,11 +21,11 @@ const Searchbar = () => {
         <Image className='icon' src={Notification} />
       </Link>
       <Link href='/user'>
-        <div className="flex gap-2 items-center">
+        <div className="user-search-icon">
           <Image className='icon' src={UserProfile} width={100} height={100} />
-          <div className="flex flex-col">
-            <p className='font-bold'>{userDetails.firstName} {userDetails.lastName}</p>
-            <p className='font-light'>{userDetails.role}</p>
+          <div>
+            <p className="bold">{userDetails.firstName} {userDetails.lastName}</p>
+            <p>{userDetails.role}</p>
           </div>
         </div>
       </Link>

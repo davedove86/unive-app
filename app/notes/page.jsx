@@ -9,7 +9,7 @@ const Notes = () => {
           <h2 className='font-bold text-purple my-2'>{note.title}</h2>
           <p className='mb-10'>{note.content}</p>
           <p className='mt-auto'>Date created: {note.date}</p>
-          <button className='mt-4 bg-purple text-white py-2 rounded-lg'>View More</button>
+          <button className='mt-4 bg-purple text-white py-2 rounded-lg'>View Note</button>
         </div>
       ))}
     </div>
