@@ -1,5 +1,11 @@
 import {userDetails, notesData} from '@/app/placeholder-data';
 
+export const metadata = {
+	title: 'Unive | Notes',
+	description: 'Unive Home Page, Student Notes Dashboard',
+	keywords: 'Uni, Student, Dashboard Notes',
+};
+
 const Notes = () => {
 	return <>
     <h1 className='text-3xl mb-8'>{userDetails.firstName}'s Notes</h1>
